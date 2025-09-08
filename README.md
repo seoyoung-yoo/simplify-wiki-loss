@@ -4,6 +4,9 @@ This repository contains the final materials of my Master’s Thesis:
 Automated Assessment of Information Loss in Simple English Wikipedia
 (University of Mannheim, September 2025)
 
+## Abstract
+This thesis investigates information loss in text simplification, focusing on English Wikipedia and Simple English Wikipedia. While simplification improves accessibility, it often omits or alters factual details, reducing the reliability of simplified knowledge. To address this, we constructed a dataset of 10,000 aligned article pairs with topic labels and developed an automated framework to quantify information loss. This framework applies three Large Language Models (LLaMA-3-8B-Instruct, Mistral-7B-Instruct-v0.3, and Gemma-2-9B) to generate semantic retention scores and lists of retained and lost facts for fact-level comparisons. Internal validation was performed through consistency checks and pairwise correlation, while external validation involved a human-annotated subset of 50 article pairs from diverse topics. Results show that LLMs identify broad patterns of information loss but often struggle with balanced fact extraction, reducing precision and recall. Further analysis reveals topic-specific trends: Culture and Geography articles tend to preserve information, whereas STEM and History/Society articles show greater loss. These findings indicate that while LLMs are useful for recognizing general trends in information loss, significant challenges remain for their reliability in detailed assessments.
+
 ## Repository Contents
 - data/
   - final_dataset.csv – Final aligned dataset used in the thesis
